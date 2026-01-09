@@ -1,179 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoológico Nacional - Conservación y Educación</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoológico Nacional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-white text-gray-800">
 
-    <!-- Navegación -->
-    <nav class="bg-emerald-950 text-emerald-50 shadow-md">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="text-2xl font-serif font-semibold tracking-wide">ZOOLÓGICO NACIONAL</h1>
-                    <p class="text-xs text-emerald-300 mt-1">Conservación • Educación • Investigación</p>
-                </div>
-                <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-                    <a href="#inicio" class="hover:text-emerald-300 transition">Inicio</a>
-                    <a href="#colecciones" class="hover:text-emerald-300 transition">Colecciones</a>
-                    <a href="#conservacion" class="hover:text-emerald-300 transition">Conservación</a>
-                    <a href="#visita" class="hover:text-emerald-300 transition">Planifica tu Visita</a>
-                    <a href="#contacto" class="hover:text-emerald-300 transition">Contacto</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="bg-emerald-950 text-emerald-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-serif font-semibold tracking-wide">
+      Zoológico Nacional
+    </h1>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="#acerca" class="hover:text-emerald-300">Acerca de</a>
+      <a href="#animales" class="hover:text-emerald-300">Animales</a>
+      <a href="#visita" class="hover:text-emerald-300">Visita</a>
+      <a href="#reservas" class="hover:text-emerald-300">Reservas</a>
+      <a href="#contacto" class="hover:text-emerald-300">Contacto</a>
+    </div>
+  </div>
+</nav>
 
-    <!-- Hero -->
-    <section id="inicio" class="relative bg-emerald-950 text-white py-32">
-        <div class="absolute inset-0 bg-gradient-to-r from-emerald-950 to-emerald-900 opacity-90"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-3xl">
-                <h2 class="text-5xl font-serif font-bold mb-6 leading-tight">
-                    Comprometidos con la Conservación de la Vida Silvestre
-                </h2>
-                <p class="text-xl text-emerald-200 mb-8 leading-relaxed">
-                    Protección de especies amenazadas, investigación científica y educación ambiental.
-                </p>
-                <div class="flex space-x-4">
-                    <button class="bg-emerald-50 text-emerald-950 font-semibold py-3 px-8 hover:bg-emerald-100 transition">
-                        Reservar Entradas
-                    </button>
-                    <button class="border-2 border-emerald-50 text-emerald-50 font-semibold py-3 px-8 hover:bg-emerald-50 hover:text-emerald-950 transition">
-                        Más Información
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="bg-[url(/img/logo.png)] bg-center bg-repeat-xrelative bg-emerald-950 text-emerald-50 py-28">
+  <div class="absolute inset-0 bg-gradient-to-r from-emerald-950 to-emerald-900"></div>
 
-    <!-- Estadísticas -->
-    <section class="bg-emerald-50 py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <p class="text-4xl font-bold text-emerald-900 mb-2">350+</p>
-                    <p class="text-sm text-emerald-700 uppercase tracking-wide">Especies</p>
-                </div>
-                <div>
-                    <p class="text-4xl font-bold text-emerald-900 mb-2">2,500+</p>
-                    <p class="text-sm text-emerald-700 uppercase tracking-wide">Animales</p>
-                </div>
-                <div>
-                    <p class="text-4xl font-bold text-emerald-900 mb-2">45</p>
-                    <p class="text-sm text-emerald-700 uppercase tracking-wide">Años</p>
-                </div>
-                <div>
-                    <p class="text-4xl font-bold text-emerald-900 mb-2">12</p>
-                    <p class="text-sm text-emerald-700 uppercase tracking-wide">Programas</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="relative container mx-auto px-6 max-w-4xl">
+    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+      Conservación, educación e investigación
+    </h2>
+    <p class="text-xl text-emerald-200 mb-10 leading-relaxed">
+      Institución dedicada a la protección de la biodiversidad y a la divulgación
+      científica desde 1980.
+    </p>
+    <a href="#reservas"
+       class="inline-block bg-emerald-50 text-emerald-950 font-semibold
+              px-10 py-4 hover:bg-emerald-100 transition">
+      Reservar entradas
+    </a>
+  </div>
+</section>
 
-    <!-- Colecciones -->
-    <section id="colecciones" class="py-20 bg-gradient-to-b from-emerald-900 to-emerald-950">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif font-bold text-white mb-4">Nuestras Colecciones</h2>
-                <p class="text-emerald-200 max-w-2xl mx-auto">
-                    Especies de todos los continentes en hábitats diseñados cuidadosamente.
-                </p>
-            </div>
+<!-- OPCIONES PRINCIPALES -->
+<section class="py-20 bg-emerald-50">
+  <div class="container mx-auto px-6">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <!-- Tarjeta -->
-                <div class="bg-emerald-800 border-2 border-emerald-700 shadow-xl hover:border-emerald-500 transition">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif font-bold text-white mb-4">🦁 Mamíferos Terrestres</h3>
-                        <p class="text-emerald-200 mb-6">
-                            Grandes felinos, primates y herbívoros en peligro de extinción.
-                        </p>
-                        <ul class="space-y-3 text-emerald-100">
-                            <li class="bg-emerald-900 p-3 rounded">León Africano</li>
-                            <li class="bg-emerald-900 p-3 rounded">Gorila de Montaña</li>
-                            <li class="bg-emerald-900 p-3 rounded">Tigre de Bengala</li>
-                        </ul>
-                    </div>
-                </div>
+      <a href="#acerca"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Acerca del zoológico</h3>
+        <p class="text-gray-600 text-sm">
+          Historia, misión y valores de la institución.
+        </p>
+      </a>
 
-                <div class="bg-emerald-800 border-2 border-emerald-700 shadow-xl hover:border-emerald-500 transition">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif font-bold text-white mb-4">🦅 Aves</h3>
-                        <p class="text-emerald-200 mb-6">
-                            Aviarios con especies rapaces y tropicales.
-                        </p>
-                        <ul class="space-y-3 text-emerald-100">
-                            <li class="bg-emerald-900 p-3 rounded">Águila Real</li>
-                            <li class="bg-emerald-900 p-3 rounded">Guacamayo Azul</li>
-                            <li class="bg-emerald-900 p-3 rounded">Cóndor Andino</li>
-                        </ul>
-                    </div>
-                </div>
+      <a href="#animales"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Animales y colecciones</h3>
+        <p class="text-gray-600 text-sm">
+          Especies de todos los continentes y sus hábitats.
+        </p>
+      </a>
 
-                <div class="bg-emerald-800 border-2 border-emerald-700 shadow-xl hover:border-emerald-500 transition">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif font-bold text-white mb-4">🐊 Reptiles</h3>
-                        <p class="text-emerald-200 mb-6">
-                            Instalaciones con control climático.
-                        </p>
-                        <ul class="space-y-3 text-emerald-100">
-                            <li class="bg-emerald-900 p-3 rounded">Cocodrilo del Nilo</li>
-                            <li class="bg-emerald-900 p-3 rounded">Iguana Verde</li>
-                            <li class="bg-emerald-900 p-3 rounded">Pitón Real</li>
-                        </ul>
-                    </div>
-                </div>
+      <a href="#conservacion"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Conservación</h3>
+        <p class="text-gray-600 text-sm">
+          Programas de protección y reproducción.
+        </p>
+      </a>
 
-                <div class="bg-emerald-800 border-2 border-emerald-700 shadow-xl hover:border-emerald-500 transition">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif font-bold text-white mb-4">🐧 Vida Marina</h3>
-                        <p class="text-emerald-200 mb-6">
-                            Ecosistemas marinos y de agua dulce.
-                        </p>
-                        <ul class="space-y-3 text-emerald-100">
-                            <li class="bg-emerald-900 p-3 rounded">Pingüino de Humboldt</li>
-                            <li class="bg-emerald-900 p-3 rounded">Foca Común</li>
-                            <li class="bg-emerald-900 p-3 rounded">Tiburón Nodriza</li>
-                        </ul>
-                    </div>
-                </div>
+      <a href="#visita"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Planifica tu visita</h3>
+        <p class="text-gray-600 text-sm">
+          Horarios, tarifas y normas del parque.
+        </p>
+      </a>
 
-            </div>
-        </div>
-    </section>
+      <a href="#reservas"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Entradas y reservas</h3>
+        <p class="text-gray-600 text-sm">
+          Compra anticipada y visitas guiadas.
+        </p>
+      </a>
 
-    <!-- Conservación -->
-    <section id="conservacion" class="bg-emerald-950 text-emerald-50 py-20">
-        <div class="container mx-auto px-6 text-center max-w-4xl">
-            <h2 class="text-4xl font-serif font-bold mb-6">Compromiso con la Conservación</h2>
-            <p class="text-xl text-emerald-200 mb-12">
-                Programas internacionales de protección y reintroducción de especies.
-            </p>
-        </div>
-    </section>
+      <a href="#contacto"
+         class="bg-white border border-emerald-200 p-8 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-3">Contacto</h3>
+        <p class="text-gray-600 text-sm">
+          Información y atención al visitante.
+        </p>
+      </a>
 
-    <!-- Visita -->
-    <section id="visita" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-serif font-bold text-emerald-900 mb-6">Planifica tu Visita</h2>
-            <p class="text-emerald-700">Abierto todos los días del año</p>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="contacto" class="bg-emerald-950 text-emerald-50 py-16">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-emerald-400 text-sm">
-                © 2026 Zoológico Nacional · Todos los derechos reservados
-            </p>
-        </div>
-    </footer>
+<!-- BLOQUE INSTITUCIONAL -->
+<section id="acerca" class="py-20">
+  <div class="container mx-auto px-6 max-w-3xl">
+    <h2 class="text-3xl font-serif font-bold mb-6 text-emerald-900">
+      Una institución al servicio de la biodiversidad
+    </h2>
+    <p class="text-gray-700 leading-relaxed">
+      El Zoológico Nacional es una institución pública dedicada a la conservación
+      de especies amenazadas, la investigación científica y la educación ambiental.
+      Participamos en programas internacionales y colaboramos con universidades
+      y centros de investigación.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="bg-emerald-950 text-emerald-50 py-12">
+  <div class="container mx-auto px-6 text-center text-sm text-emerald-400">
+    © 2026 Zoológico Nacional · Todos los derechos reservados
+  </div>
+</footer>
 
 </body>
 </html>
