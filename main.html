@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoológico Nacional</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'logo-pattern': "url('./img/logo.png')",   
+        }
+      }
+    }
+  }
+</script>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -25,21 +37,20 @@
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="bg-[url(/img/logo.png)] bg-center bg-repeat-xrelative bg-emerald-950 text-emerald-50 py-28">
-  <div class="absolute inset-0 bg-gradient-to-r from-emerald-950 to-emerald-900"></div>
+<!-- HERO – VERSIÓN QUE FUNCIONA AL 100% CON TAILWIND CDN -->
+<section class="relative bg-emerald-950/40 bg-logo-pattern bg-repeat bg-[length:140px_140px] text-emerald-50 py-32 overflow-hidden">
 
-  <div class="relative container mx-auto px-6 max-w-4xl">
-    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+  <!-- Overlay oscuro sutil -->
+  <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/75 to-emerald-900/60"></div>
+
+  <div class="relative container mx-auto px-6 max-w-4xl text-center">
+    <h2 class="text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight drop-shadow-2xl">
       Conservación, educación e investigación
     </h2>
-    <p class="text-xl text-emerald-200 mb-10 leading-relaxed">
-      Institución dedicada a la protección de la biodiversidad y a la divulgación
-      científica desde 1980.
+    <p class="text-xl md:text-2xl text-emerald-100 mb-10 max-w-2xl mx-auto drop-shadow-lg">
+      Institución dedicada a la protección de la biodiversidad y a la divulgación científica desde 1980.
     </p>
-    <a href="#reservas"
-       class="inline-block bg-emerald-50 text-emerald-950 font-semibold
-              px-10 py-4 hover:bg-emerald-100 transition">
+    <a href="#reservas" class="inline-block bg-white text-emerald-950 font-bold px-12 py-5 text-lg hover:bg-emerald-50 transition shadow-2xl transform hover:scale-105">
       Reservar entradas
     </a>
   </div>
